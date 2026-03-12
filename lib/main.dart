@@ -17,7 +17,17 @@ class MyApp extends StatelessWidget {
       create: (_) => PetProvider(),
       child: MaterialApp(
         title: 'VetCare',
-        theme: ThemeData(primarySwatch: Colors.blue),
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          primaryColor: const Color(0xFF5E72E4),
+          useMaterial3: true,
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Color(0xFF5E72E4),
+          ),
+          floatingActionButtonTheme: const FloatingActionButtonThemeData(
+            backgroundColor: Color(0xFF5E72E4),
+          ),
+        ),
         home: const HomeScreen(),
       ),
     );
