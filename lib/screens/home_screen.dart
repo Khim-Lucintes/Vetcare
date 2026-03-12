@@ -121,10 +121,10 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Pet Care Tip:', style: Theme.of(context).textTheme.subtitle1),
+            Text('Pet Care Tip:', style: Theme.of(context).textTheme.titleMedium),
             Text(_tip),
             const SizedBox(height: 16),
-            Text('Your Pets:', style: Theme.of(context).textTheme.subtitle1),
+            Text('Your Pets:', style: Theme.of(context).textTheme.titleMedium),
             Expanded(
               child: pets.isEmpty
                   ? const Center(child: Text('No pets added yet.'))
